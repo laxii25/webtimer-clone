@@ -14,7 +14,9 @@ function updateDisplay(){
     Math.floor(totalSeconds / 3600);
 
     const m =
-    Math.floor((totalSeconds % 3600) / 60);
+    Math.floor(
+        (totalSeconds % 3600) / 60
+    );
 
     const s =
     totalSeconds % 60;
@@ -32,6 +34,7 @@ document
 .onclick = () => {
 
     totalSeconds += 3600;
+
     updateDisplay();
 };
 
@@ -40,6 +43,7 @@ document
 .onclick = () => {
 
     totalSeconds += 60;
+
     updateDisplay();
 };
 
@@ -48,6 +52,7 @@ document
 .onclick = () => {
 
     totalSeconds += 1;
+
     updateDisplay();
 };
 
