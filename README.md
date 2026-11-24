@@ -1,2 +1,2 @@
 # webtimer-clone
-my time
+my timer
